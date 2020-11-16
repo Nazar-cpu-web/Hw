@@ -1,0 +1,5 @@
+text = input("Your text: ")
+texts = text.split()
+texts.reverse()
+output = " ".join(texts)
+print("Result: ", output[::-1])
