@@ -1,0 +1,6 @@
+text = input("Your text:")
+for t in text:
+    t = t * 2
+    if t == '  ':
+        t = t.replace("  ", " ")
+    print(t , end = "")
