@@ -1,0 +1,12 @@
+alpha = "abcdefghiklmnopqrstvxyzaабвгдежзийклмнопрстуфхцчшщъыьэюяа12345678901"
+scrypt = input("Writte your words: ")
+key = 1
+text = ""
+for letter in scrypt:
+    position = alpha.find(letter)
+    NewPosition = position + key
+    if letter in alpha:
+        text = text + alpha[NewPosition]
+    else:
+        text = text + letter
+print("Your ceaser code: ", text)
